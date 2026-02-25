@@ -319,11 +319,7 @@ $$\eta_{th} = \frac{\dot{m}_e \frac{V_{eq}^2}{2} - \dot{m}_{in}\frac{V_1^2}{2}}{
 
 ---
 
-## 📚 Course Information
 
-**MAE 563 — Introduction to Propulsion Theory and Applications**  
-Arizona State University  
-Instructor: Prof. Werner J.A. Dahm
 
 ---
 
