@@ -2,9 +2,8 @@
 
 ![RAMJET Analysis Tool Banner](images/banner.svg)
 
-**Course:** MAE 563 – Introduction to Propulsion Theory and Applications  
-**Instructor:** Prof. Werner J.A. Dahm | Arizona State University  
-**Author:** Vaishanavi Sogalad (ASU ID: 1232641594)
+ 
+**Author:** Vaishanavi Sogalad
 
 </div>
 
