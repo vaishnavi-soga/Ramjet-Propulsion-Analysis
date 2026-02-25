@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" width="860" height="220">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  style="stop-color:#1f4068"/>
+      <stop offset="100%" style="stop-color:#0d2035"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  style="stop-color:#3a1f06"/>
+      <stop offset="100%" style="stop-color:#1a0d00"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  style="stop-color:#1f3a20"/>
+      <stop offset="100%" style="stop-color:#0d1a0d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="860" height="220" fill="url(#bg)" rx="10"/>
+
+  <!-- Title -->
+  <text x="430" y="28" font-family="sans-serif" font-size="14" font-weight="bold"
+        fill="#e6edf3" text-anchor="middle">Code Architecture — Module Flow</text>
+
+  <!-- Arrow helper: reusable -->
+  <!-- State 1 -->
+  <rect x="20" y="55" width="90" height="110" rx="8" fill="url(#box1)" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="65" y="78"  font-family="monospace" font-size="11" fill="#58a6ff" text-anchor="middle">module1.m</text>
+  <line x1="35" y1="85" x2="95" y2="85" stroke="#4a90d9" stroke-width="0.5" opacity="0.5"/>
+  <text x="65" y="100" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">Atmosphere</text>
+  <text x="65" y="114" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">model</text>
+  <text x="65" y="128" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">T₁ P₁ V₁</text>
+  <text x="65" y="148" font-family="monospace" font-size="10" fill="#3fb950" text-anchor="middle">State 1</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="110" y1="110" x2="138" y2="110" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="138,106 148,110 138,114" fill="#4a90d9"/>
+
+  <!-- State 2 -->
+  <rect x="148" y="55" width="90" height="110" rx="8" fill="url(#box1)" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="193" y="78"  font-family="monospace" font-size="11" fill="#58a6ff" text-anchor="middle">module2.m</text>
+  <line x1="163" y1="85" x2="223" y2="85" stroke="#4a90d9" stroke-width="0.5" opacity="0.5"/>
+  <text x="193" y="100" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">Diffuser</text>
+  <text x="193" y="114" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">ηd, entropy</text>
+  <text x="193" y="128" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">T₂ P₂ Pt₂</text>
+  <text x="193" y="148" font-family="monospace" font-size="10" fill="#3fb950" text-anchor="middle">State 2</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="238" y1="110" x2="266" y2="110" stroke="#ff8c42" stroke-width="1.5"/>
+  <polygon points="266,106 276,110 266,114" fill="#ff8c42"/>
+
+  <!-- State 3 -->
+  <rect x="276" y="55" width="90" height="110" rx="8" fill="url(#box2)" stroke="#ff8c42" stroke-width="1.5"/>
+  <text x="321" y="78"  font-family="monospace" font-size="11" fill="#ff8c42" text-anchor="middle">module3.m</text>
+  <line x1="291" y1="85" x2="351" y2="85" stroke="#ff8c42" stroke-width="0.5" opacity="0.5"/>
+  <text x="321" y="100" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">Combustor</text>
+  <text x="321" y="114" font-family="sans-serif" font-size="9"  fill="#ff6b35" text-anchor="middle">Choke check</text>
+  <text x="321" y="128" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">Tt₃ q₂₃ M₃</text>
+  <text x="321" y="148" font-family="monospace" font-size="10" fill="#3fb950" text-anchor="middle">State 3</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="366" y1="110" x2="394" y2="110" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="394,106 404,110 394,114" fill="#4a90d9"/>
+
+  <!-- State e (nozzle exit) -->
+  <rect x="404" y="55" width="90" height="110" rx="8" fill="url(#box1)" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="449" y="78"  font-family="monospace" font-size="11" fill="#58a6ff" text-anchor="middle">module4.m</text>
+  <line x1="419" y1="85" x2="479" y2="85" stroke="#4a90d9" stroke-width="0.5" opacity="0.5"/>
+  <text x="449" y="100" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">Nozzle</text>
+  <text x="449" y="114" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">ηn, ṁ_exit</text>
+  <text x="449" y="128" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">Vₑ Pₑ Mₑ</text>
+  <text x="449" y="148" font-family="monospace" font-size="10" fill="#3fb950" text-anchor="middle">State e</text>
+
+  <!-- Arrow e→5 -->
+  <line x1="494" y1="110" x2="522" y2="110" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="522,106 532,110 522,114" fill="#4a90d9"/>
+
+  <!-- State 4 -->
+  <rect x="532" y="55" width="90" height="110" rx="8" fill="url(#box1)" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="577" y="78"  font-family="monospace" font-size="11" fill="#58a6ff" text-anchor="middle">module5.m</text>
+  <line x1="547" y1="85" x2="607" y2="85" stroke="#4a90d9" stroke-width="0.5" opacity="0.5"/>
+  <text x="577" y="100" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">Far-field</text>
+  <text x="577" y="114" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">exhaust</text>
+  <text x="577" y="128" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">T₄ V₄ ΔS</text>
+  <text x="577" y="148" font-family="monospace" font-size="10" fill="#3fb950" text-anchor="middle">State 4</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="622" y1="110" x2="650" y2="110" stroke="#3fb950" stroke-width="1.5"/>
+  <polygon points="650,106 660,110 650,114" fill="#3fb950"/>
+
+  <!-- Module 6 - Performance -->
+  <rect x="660" y="40" width="175" height="140" rx="8" fill="url(#box3)" stroke="#3fb950" stroke-width="2"/>
+  <text x="747" y="65"  font-family="monospace" font-size="11" fill="#3fb950" text-anchor="middle">module6.m</text>
+  <line x1="675" y1="72" x2="820" y2="72" stroke="#3fb950" stroke-width="0.5" opacity="0.5"/>
+  <text x="747" y="87"  font-family="sans-serif" font-size="10" font-weight="bold" fill="#e6edf3" text-anchor="middle">Performance Output</text>
+  <text x="747" y="104" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">Thrust · TSFC · Isp</text>
+  <text x="747" y="118" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">η_th · η_prop · η_o</text>
+  <text x="747" y="132" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">ṁ_fuel · ṁ_air · f</text>
+  <text x="747" y="146" font-family="sans-serif" font-size="9"  fill="#8b949e" text-anchor="middle">Propulsive Power</text>
+  <text x="747" y="166" font-family="monospace" font-size="10" fill="#3fb950" text-anchor="middle">✓ All metrics</text>
+
+  <!-- Bottom note -->
+  <text x="430" y="200" font-family="sans-serif" font-size="10" fill="#484f58" text-anchor="middle">
+    All Part scripts (A–I) call modules 1→6 in sequence with different swept parameters
+  </text>
+</svg>
